@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>{{  title  }}</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    </head>
+    <body>
+        <h1 id="title">{{  title  }}</h1>
+        <div class="orders">
+            <div>
+                <p>
+                    Date: {{  order.order_date  }}<br>
+                    Quantity: {{  order.quantity  }}<br>
+                    Book Title: {{  order.book_title  }}<br>
+                    Author: {{  order.author_name  }}<br>
+                    Customer Name: {{  order.customer_name  }}<br>
+                    <a href="http://localhost:5000/orders">Back</a>
+                </p>
+            </div>
+        </div>
+    </body>
+</html>
